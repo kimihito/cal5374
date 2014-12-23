@@ -3,7 +3,10 @@ source 'https://rubygems.org'
 ruby '2.1.5'
 
 gem 'rails', '4.1.8'
-gem 'sqlite3', group: [:development, :test]
+group :development, :test do
+  gem 'sqlite3'
+  gem 'turnip'
+end
 gem 'pg', group: :production
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
