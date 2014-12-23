@@ -42,6 +42,13 @@ GEM
       sass (~> 3.2)
       thor
     builder (3.2.2)
+    capybara (2.4.4)
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (~> 2.0)
+    cliver (0.3.2)
     coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -71,12 +78,20 @@ GEM
     mem (0.1.5)
     method_source (0.8.2)
     mime-types (2.4.3)
+    mini_portile (0.6.1)
     minitest (5.5.0)
     multi_json (1.10.1)
     neat (1.5.1)
       bourbon (>= 3.1)
       sass (~> 3.2.19)
+    nokogiri (1.6.5)
+      mini_portile (~> 0.6.0)
     pg (0.17.1)
+    poltergeist (1.5.1)
+      capybara (~> 2.1)
+      cliver (~> 0.3.1)
+      multi_json (~> 1.0)
+      websocket-driver (>= 0.2.0)
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -168,6 +183,11 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
+    websocket-driver (0.5.1)
+      websocket-extensions (>= 0.1.0)
+    websocket-extensions (0.1.1)
+    xpath (2.0.0)
+      nokogiri (~> 1.3)
 
 PLATFORMS
   ruby
@@ -175,6 +195,7 @@ PLATFORMS
 DEPENDENCIES
   bitters
   bourbon
+  capybara
   coffee-rails (~> 4.0.0)
   icalendar
   jbuilder (~> 2.0)
@@ -182,6 +203,7 @@ DEPENDENCIES
   mem
   neat
   pg
+  poltergeist
   pry-rails
   rails (= 4.1.8)
   rails_12factor
